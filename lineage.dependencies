@@ -1,0 +1,8 @@
+[
+  {
+    "repository": "android_device_oppo_OP5AA5L1-kernel",
+    "branch": "lineage-23.1",
+    "target_path": "device/oppo/OP5AA5L1-kernel",
+    "optional": true
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "Metadata": {
+    "Version": 2
+  },
+  "AdpfConfig": {
+    "uclamp_min_on_up_migrate": 90,
+    "uclamp_min_on_down_migrate": 0,
+    "uclamp_max_big_tasks_num": 5,
+    "fast_polling_duration_ns": 80000000,
+    "slow_polling_period_ns": 20000000,
+    "slow_polling_period_ns_valid": true
+  }
+}

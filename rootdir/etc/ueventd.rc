@@ -1,0 +1,42 @@
+# ueventd.rc for mt6991
+
+# Provide the access that media_rw group has to all storage
+/dev/block/vold/*          0660  root  media_rw
+
+# FUSE / SDCARD
+/dev/fuse                  0660  root  sdcard_rw
+
+# MediaTek devices
+/dev/kmb			  0660  root   root
+/dev/M4U_device  	  0644  system system
+/dev/mtk_cmdq 		  0660  root   root
+/dev/mtk_cmdq1 		  0660  root   root
+/dev/mtk_cmdq2 		  0660  root   root
+/dev/mtk_cmdq3 		  0660  root   root
+/dev/mtk_cmdq4 		  0660  root   root
+/dev/DW_hdmi_audio		  0660  media  audio
+
+# MDBS
+/dev/ccci_ipc_1		0660  root   radio
+/dev/ccci_ipc_2		0660  root   radio
+/dev/ccci_ipc_3		0660  root   radio
+
+# NFC
+/dev/pn553              0660  nfc    nfc
+
+# Fingerprint
+/dev/goodix_fp          0666  system system
+/dev/silead_fp          0666  system system
+
+# GPU
+/dev/mali0              0666  root   graphics
+
+# Bluetooth
+/dev/ttyMT2             0660  bluetooth bluetooth
+
+# Sensors
+/dev/stk_cali           0666  system system
+
+# Audio
+/dev/audio_ipi          0660  media  media
+/dev/snd/controlC0      0660  root   audio

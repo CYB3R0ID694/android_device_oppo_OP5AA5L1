@@ -1,0 +1,29 @@
+# File contexts for OP5AA5L1 device-specific paths
+
+# Block devices
+/dev/block/by-name/userdata          u:object_r:userdata_block_device:s0
+/dev/block/by-name/metadata          u:object_r:metadata_block_device:s0
+/dev/block/by-name/misc              u:object_r:misc_block_device:s0
+/dev/block/by-name/boot(.*)          u:object_r:boot_block_device:s0
+/dev/block/by-name/vendor(.*)        u:object_r:vendor_block_device:s0
+/dev/block/by-name/system(.*)        u:object_r:system_block_device:s0
+/dev/block/by-name/dtbo(.*)          u:object_r:dtbo_block_device:s0
+/dev/block/by-name/vbmeta(.*)        u:object_r:vbmeta_block_device:s0
+
+# MediaTek devices
+/dev/ccci_ipc_[0-9]+                 u:object_r:ccci_device:s0
+/dev/audio_ipi                       u:object_r:audio_ipi_device:s0
+/dev/mali0                           u:object_r:mali_device:s0
+
+# Fingerprint
+/dev/goodix_fp                       u:object_r:goodix_fp_device:s0
+/dev/silead_fp                       u:object_r:silead_fp_device:s0
+
+# NFC
+/dev/pn553                           u:object_r:nfc_device:s0
+
+# Executables
+/vendor/bin/mtk-ril                  u:object_r:mtk_ril_exec:s0
+/vendor/bin/rilproxy                 u:object_r:mtk_ril_exec:s0
+/vendor/bin/thermal-engine           u:object_r:thermal_engine_exec:s0
+/vendor/bin/mtk-agpsd                u:object_r:gpsd_exec:s0

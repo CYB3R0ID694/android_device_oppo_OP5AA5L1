@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Media codecs list for mt6991 - PLACEHOLDER, copy from stock -->
+<MediaCodecs>
+    <Encoders>
+        <MediaCodec name="OMX.MTK.VIDEO.ENCODER.AVC" type="video/avc">
+            <Limit name="size" min="176x144" max="4096x2160" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="blocks-per-second" min="1" max="2073600" />
+            <Limit name="bitrate" range="1-120000000" />
+            <Feature name="intra-refresh" />
+        </MediaCodec>
+        <MediaCodec name="OMX.MTK.VIDEO.ENCODER.HEVC" type="video/hevc">
+            <Limit name="size" min="176x144" max="4096x2160" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="bitrate" range="1-160000000" />
+        </MediaCodec>
+    </Encoders>
+    <Decoders>
+        <MediaCodec name="OMX.MTK.VIDEO.DECODER.AVC" type="video/avc">
+            <Limit name="size" min="64x64" max="8192x8192" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="bitrate" range="1-120000000" />
+        </MediaCodec>
+        <MediaCodec name="OMX.MTK.VIDEO.DECODER.HEVC" type="video/hevc">
+            <Limit name="size" min="64x64" max="8192x8192" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="bitrate" range="1-160000000" />
+        </MediaCodec>
+        <MediaCodec name="OMX.MTK.VIDEO.DECODER.AV1" type="video/av01">
+            <Limit name="size" min="64x64" max="8192x8192" />
+            <Limit name="bitrate" range="1-200000000" />
+        </MediaCodec>
+    </Decoders>
+</MediaCodecs>

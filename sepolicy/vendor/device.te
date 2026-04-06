@@ -1,0 +1,47 @@
+# Allow platform apps to access device-specific paths
+# Covers basic mt6991 SELinux needs
+
+# MediaTek IPI audio
+type audio_ipi_device, dev_type;
+allow audioserver audio_ipi_device:chr_file rw_file_perms;
+
+# Fingerprint (Goodix)
+type goodix_fp_device, dev_type;
+allow fingerprintd goodix_fp_device:chr_file rw_file_perms;
+allow system_server goodix_fp_device:chr_file r_file_perms;
+
+# GPU
+type mali_device, dev_type;
+allow hal_graphics_allocator_default mali_device:chr_file rw_file_perms;
+
+# sysfs for thermal
+allow thermal-engine sysfs_thermal:dir r_dir_perms;
+allow thermal-engine sysfs_thermal:file rw_file_perms;
+
+# RIL / modem
+allow rild ccci_device:chr_file rw_file_perms;
+type ccci_device, dev_type;
+
+# mtk-ril service
+type mtk_ril, domain;
+type mtk_ril_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(mtk_ril)
+
+# vendor init
+allow vendor_init sysfs:file rw_file_perms;
+allow vendor_init proc:file rw_file_perms;
+
+# Sensors
+allow hal_sensors_default sysfs_sensors:dir r_dir_perms;
+allow hal_sensors_default sysfs_sensors:file rw_file_perms;
+
+# NFC
+type nfc_device, dev_type;
+allow nfc nfc_device:chr_file rw_file_perms;
+
+# wifi
+allow hal_wifi_default self:capability net_admin;
+allow hal_wifi_default wifi_data_file:dir rw_dir_perms;
+
+# Camera
+allow hal_camera_default camera_data_file:dir rw_dir_perms;

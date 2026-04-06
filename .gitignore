@@ -1,0 +1,20 @@
+# Prebuilt kernel artifacts (extracted locally, not committed)
+prebuilt/kernel
+prebuilt/dtb.img
+prebuilt/dtbo.img
+prebuilt/boot.img
+prebuilt/vendor_boot.img
+prebuilt/tmp/
+prebuilt/modules/*.ko
+
+# OTA work directory
+ota_work/
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Editor
+.vscode/
+*.swp
+*~

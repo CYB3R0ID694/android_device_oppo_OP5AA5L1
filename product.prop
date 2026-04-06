@@ -1,0 +1,10 @@
+# Product properties for OP5AA5L1
+
+# Product build
+ro.product.model=CPH2651
+ro.product.brand=OPPO
+ro.product.name=CPH2651IN
+ro.product.manufacturer=OPPO
+
+# App
+ro.com.android.mobiledata=true

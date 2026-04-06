@@ -1,0 +1,127 @@
+# Proprietary files list for Oppo Find X8 (OP5AA5L1)
+# Source: ColorOS 16 / BP2A.250605.015
+# Generated from stock firmware
+#
+# NOTE: This list needs to be completed by running extract-files.sh
+# against a real device or stock firmware dump.
+#
+# ===== Audio HAL =====
+vendor/lib64/hw/audio.primary.mt6991.so
+vendor/lib64/libaudio_param_setting.so
+vendor/lib64/libaudiorpc.so
+vendor/lib64/libaudiosignal.so
+vendor/lib64/libaudiocomponent.so
+vendor/lib/hw/audio.primary.mt6991.so
+vendor/lib/libaudio_param_setting.so
+
+# ===== Bluetooth =====
+vendor/bin/hw/android.hardware.bluetooth@1.1-service-mediatek
+vendor/lib64/libbt-vendor.so
+vendor/lib64/libbt-ven.so
+
+# ===== Camera =====
+vendor/bin/hw/vendor.mediatek.hardware.camera.bgservice@1.1-service
+vendor/bin/hw/vendor.mediatek.hardware.camera.lomoeffect@1.0-service
+vendor/bin/hw/camerahalserver
+vendor/lib64/libCamX.so
+vendor/lib64/libMtkcam.so
+vendor/lib64/libMtkcam_fwkutils.so
+vendor/lib64/libMtkcam_modulehelper.so
+vendor/lib64/libMtkcam_stdutils.so
+vendor/lib64/libcam.utils.sensorprovider.so
+vendor/lib64/libcam.ais.so
+
+# ===== DRM (Widevine) =====
+vendor/bin/hw/android.hardware.drm@1.4-service.widevine
+vendor/lib64/mediadrm/libwvdrmengine.so
+vendor/lib64/libwvhidl.so
+
+# ===== Display =====
+vendor/bin/hw/android.hardware.graphics.composer3-service.mediatek
+vendor/lib64/libdrm.so
+vendor/lib64/libMali.so
+vendor/lib64/egl/libGLES_mali.so
+vendor/lib/egl/libGLES_mali.so
+
+# ===== Fingerprint =====
+vendor/bin/hw/android.hardware.biometrics.fingerprint@2.3-service.oplus
+vendor/lib64/libgoodixfp.so
+vendor/lib64/hw/fingerprint.default.so
+
+# ===== GPS =====
+vendor/bin/hw/android.hardware.gnss@2.1-service-mediatek
+vendor/lib64/hw/android.hardware.gnss@2.1-impl-mediatek.so
+vendor/lib64/libagps.so
+vendor/lib64/libmnl.so
+
+# ===== Gatekeeper =====
+vendor/bin/hw/android.hardware.gatekeeper@1.0-service
+vendor/lib64/hw/gatekeeper.mt6991.so
+
+# ===== Keymaster =====
+vendor/bin/hw/android.hardware.keymaster@4.1-service
+vendor/lib64/hw/keymaster41.mt6991.so
+vendor/lib64/libkeymaster4.so
+vendor/lib64/libkeymaster41.so
+
+# ===== Media =====
+vendor/lib64/libcodec2_soft_common.so
+vendor/lib64/libcodec2_vndk.so
+vendor/lib64/libMtkOmxAudioDec.so
+vendor/lib64/libMtkOmxAudioEnc.so
+vendor/lib64/libMtkOmxVdec.so
+vendor/lib64/libMtkOmxVenc.so
+
+# ===== NFC =====
+vendor/bin/hw/android.hardware.nfc@1.2-service
+vendor/lib64/hw/nfc_nci.mt6685.so
+
+# ===== Neural Networks =====
+vendor/bin/hw/android.hardware.neuralnetworks-service-mtk
+vendor/lib64/libneuronusdk_adapter.mtk.so
+vendor/lib64/libneuron_platform.so
+vendor/lib64/libNeuralNetworks.so
+
+# ===== Perf =====
+vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.2-service
+vendor/lib64/hw/vendor.mediatek.hardware.mtkpower@1.2-impl.so
+vendor/lib64/libpowerhal_client.so
+vendor/lib64/libpowerhalwrap.so
+
+# ===== Radio =====
+vendor/bin/rild
+vendor/bin/rilproxy
+vendor/lib64/libril-md.so
+vendor/lib64/librilutils.so
+vendor/lib64/mtk-ril.so
+vendor/lib64/mtk-ril.so;oplus-ril.so
+
+# ===== Sensors =====
+vendor/bin/hw/android.hardware.sensors@2.1-service.mediatek
+vendor/lib64/hw/sensors.mt6991.so
+vendor/lib64/libsensorndkbridge.so
+
+# ===== Thermal =====
+vendor/bin/hw/android.hardware.thermal@2.0-service.mediatek
+vendor/lib64/hw/android.hardware.thermal@2.0-impl.so
+vendor/bin/thermal-engine
+vendor/etc/thermal.conf
+vendor/etc/thermal_policy
+vendor/etc/.thermal_policy_00
+
+# ===== USB =====
+vendor/bin/hw/android.hardware.usb@1.3-service-mtkdefault
+
+# ===== Vibrator =====
+vendor/bin/hw/android.hardware.vibrator-service.mediatek
+vendor/lib64/hw/vibrator.mt6991.so
+
+# ===== Wi-Fi =====
+vendor/bin/hw/android.hardware.wifi@1.6-service
+vendor/lib64/hw/android.hardware.wifi.supplicant-V1-ndk-impl.so
+vendor/lib64/libwpa_client.so
+vendor/lib64/libwifi-hal-mt66xx.so
+vendor/etc/wifi/WCNSS_qcom_cfg.ini
+
+# ===== Vendor init =====
+vendor/bin/init.insmod.sh

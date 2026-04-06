@@ -1,0 +1,90 @@
+# System properties for OP5AA5L1
+
+# ADB
+persist.adb.nonblocking_ffs=0
+
+# Audio
+persist.audio.fluence.speaker=true
+persist.audio.fluence.voicecall=true
+persist.audio.fluence.voicerec=false
+persist.vendor.audio.fluence.speaker=true
+persist.vendor.audio.fluence.voicecall=true
+persist.vendor.audio.fluence.voicerec=false
+ro.config.media_vol_steps=25
+ro.config.vc_call_vol_steps=11
+
+# Bluetooth
+bluetooth.device.class_of_device=90,2,12
+bluetooth.profile.a2dp.source.enabled=true
+bluetooth.profile.avrcp.target.enabled=true
+bluetooth.profile.bas.client.enabled=true
+bluetooth.profile.gatt.enabled=true
+bluetooth.profile.hfp.ag.enabled=true
+bluetooth.profile.hid.device.enabled=true
+bluetooth.profile.hid.host.enabled=true
+bluetooth.profile.map.server.enabled=true
+bluetooth.profile.opp.enabled=true
+bluetooth.profile.pan.nap.enabled=true
+bluetooth.profile.pan.panu.enabled=true
+bluetooth.profile.pbap.server.enabled=true
+bluetooth.profile.sap.server.enabled=true
+
+# Camera
+ro.camera.enableCamera1For3rdParty=true
+
+# Dalvik
+dalvik.vm.heapgrowthlimit=256m
+dalvik.vm.heapsize=512m
+dalvik.vm.heapstartsize=8m
+
+# Display
+ro.surface_flinger.max_frame_buffer_acquired_buffers=3
+ro.surface_flinger.primary_display_orientation=ORIENTATION_0
+ro.sf.lcd_density=480
+
+# DRM
+drm.service.enabled=true
+ro.com.android.dataroaming=false
+
+# Fingerprint
+persist.vendor.fingerprint.sensor_type=optical
+
+# GKI
+androidboot.load_modules_parallel=true
+
+# GPU
+ro.hardware.egl=mali
+ro.opengles.version=196610
+
+# MediaTek
+ro.hardware=mt6991
+ro.vendor.mtk_platform=mt6991
+
+# Netflix custom
+ro.netflix.bsp_rev=MTK-mt6991-01-00001
+
+# OTA
+ro.ota.allow_downgrade=false
+
+# Performance
+ro.mtk_perf_simple_start_win=1
+ro.mtk_perf_fast_start_win=1
+ro.mtk_perf_response_time=1
+
+# Product
+ro.product.first_api_level=35
+ro.product.pet_name=
+
+# Storage
+persist.sys.vold.switchexternal=0
+
+# Telephony
+persist.radio.multisim.config=dsds
+ro.telephony.default_network=33,33
+telephony.lteOnCdmaDevice=1
+
+# USB
+ro.sys.usb.default.config=mtp
+
+# Zygote
+zygote.critical_window.minute=10

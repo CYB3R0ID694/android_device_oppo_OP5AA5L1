@@ -1,0 +1,17 @@
+# Property contexts for OP5AA5L1
+
+# MediaTek
+vendor.                                     u:object_r:vendor_default_prop:s0
+ro.vendor.mtk.                              u:object_r:vendor_default_prop:s0
+
+# Perf
+ro.mtk.perf.                                u:object_r:vendor_default_prop:s0
+persist.vendor.mtk.                         u:object_r:vendor_default_prop:s0
+
+# RIL
+ril.                                        u:object_r:radio_prop:s0
+gsm.                                        u:object_r:radio_prop:s0
+
+# Thermal
+thermal.                                    u:object_r:vendor_default_prop:s0
+vendor.thermal.                             u:object_r:vendor_default_prop:s0

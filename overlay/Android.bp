@@ -1,0 +1,22 @@
+// SPDX-License-Identifier: Apache-2.0
+
+runtime_resource_overlay {
+    name: "FrameworksResOverlay",
+    certificate: "platform",
+    product_specific: true,
+    manifest: "AndroidManifest.xml",
+}
+
+runtime_resource_overlay {
+    name: "SettingsResOverlay",
+    certificate: "platform",
+    product_specific: true,
+    manifest: "SettingsManifest.xml",
+}
+
+runtime_resource_overlay {
+    name: "WifiResOverlay",
+    certificate: "platform",
+    product_specific: true,
+    manifest: "WifiManifest.xml",
+}

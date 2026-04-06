@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Disable lockscreen when sim is absent -->
+    <bool name="config_disableHomeLockScreenWhenSimAbsent">false</bool>
+
+    <!-- Screen off battery percentage -->
+    <integer name="config_screenOffBatteryDisplayTimeout">60</integer>
+
+    <!-- Enable double tap to wake up -->
+    <bool name="config_supportDoubleTapWake">true</bool>
+
+    <!-- Device-side side gestures -->
+    <bool name="config_enableGestureService">true</bool>
+
+    <!-- Is the device's screen currently off (or turning off) -->
+    <bool name="config_dreamsEnabledByDefault">false</bool>
+    <bool name="config_dreamsActivatedOnSleepByDefault">false</bool>
+    <bool name="config_dreamsActivatedOnDockByDefault">false</bool>
+
+    <!-- The wallpaper scroller -->
+    <bool name="config_enableWallpaperService">true</bool>
+
+    <!-- NFC features -->
+    <bool name="config_nfcReaderModeEnabled">true</bool>
+
+    <!-- Prefer 2 software back buffers -->
+    <bool name="config_eglUsePbuffer">false</bool>
+
+    <!-- MMS defaults -->
+    <integer name="config_smsReceiverSleepTime">0</integer>
+    <bool name="config_useBroadcastReceiverForDataNetworkSwitch">false</bool>
+
+    <!-- Display cutout - punch hole camera -->
+    <string name="config_mainBuiltInDisplayCutout">M 0,0 L 0,104 L 1256,104 L 1256,0 Z</string>
+
+    <!-- Screen brightness -->
+    <integer-array name="config_autoBrightnessLevels">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>8</item>
+        <item>12</item>
+        <item>20</item>
+        <item>33</item>
+        <item>55</item>
+        <item>90</item>
+        <item>148</item>
+        <item>245</item>
+        <item>403</item>
+        <item>1000</item>
+        <item>1500</item>
+        <item>2000</item>
+        <item>3000</item>
+        <item>4000</item>
+    </integer-array>
+
+    <!-- Wifi display -->
+    <bool name="config_enableWifiDisplay">true</bool>
+
+    <!-- Multi-user -->
+    <integer name="config_multiuserMaximumUsers">4</integer>
+
+    <!-- Default max num of notification sounds -->
+    <integer name="config_maxSoundConcurrency">8</integer>
+
+    <!-- Camera flash -->
+    <bool name="config_cameraFlashAvailable">true</bool>
+
+    <!-- Network recommendation -->
+    <bool name="config_enableNetworkLocationOverlay">false</bool>
+
+    <!-- Phone UI -->
+    <bool name="config_hasRecents">true</bool>
+
+    <!-- Quick settings rows -->
+    <integer name="config_quickSettingsMaxColumns">4</integer>
+    <integer name="config_quickSettingsMaxRows">3</integer>
+</resources>

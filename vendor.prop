@@ -1,0 +1,102 @@
+# Vendor properties for OP5AA5L1
+
+# Audio
+vendor.audio.cal.copy.needed=0
+vendor.audio.feature.a2dp.offload.enable=false
+vendor.audio.feature.afe.proxy.enable=false
+vendor.audio.feature.audiohal.bcr.enable=false
+vendor.audio.feature.battery.listener.enable=false
+vendor.audio.feature.compress.in.enable=false
+vendor.audio.feature.compress.metadata.enable=false
+vendor.audio.feature.compr.voip.enable=false
+vendor.audio.feature.display.port.enable=false
+vendor.audio.feature.dsm.feedback.enable=false
+vendor.audio.feature.dynamic.ecns.enable=false
+vendor.audio.feature.ext.amplifier.enable=false
+vendor.audio.feature.fluence.enable=true
+vendor.audio.feature.hdmi.edid.enable=false
+vendor.audio.feature.hearing.aid.enable=false
+vendor.audio.feature.hifi.filter.enable=false
+vendor.audio.feature.incall.music.enable=false
+vendor.audio.feature.keep.alive.enable=false
+vendor.audio.feature.kpi.optimize.enable=false
+vendor.audio.feature.maxx.audio.enable=false
+vendor.audio.feature.multi.voice.session.enable=false
+vendor.audio.feature.power.mode.enable=false
+vendor.audio.feature.ras.enable=false
+vendor.audio.feature.record.play.concurrency.enable=false
+vendor.audio.feature.snd.mon.enable=false
+vendor.audio.feature.spkr.prot.enable=false
+vendor.audio.feature.src.tran.enable=false
+vendor.audio.feature.usb.offload.enable=false
+vendor.audio.feature.usb.offload.burst.mode.enable=false
+vendor.audio.feature.usb.offload.sidetone.volume.enable=false
+vendor.audio.feature.vbat.monitor.enable=false
+vendor.audio.feature.voice.print.enable=false
+vendor.audio.feature.wsa.analog.enable=false
+
+# Bluetooth
+persist.vendor.bt.a2dp_offload_cap=sbc-aac-aptx-aptxhd-ldac
+persist.vendor.bt.aac_frm_ctl.enabled=true
+vendor.qcom.bluetooth.soc=hastings
+
+# Camera
+persist.vendor.camera.privapp.list=com.oppo.camera,com.oplus.camera
+vendor.camera.aux.packagelist=com.oppo.camera,com.oplus.camera
+
+# Codec
+debug.stagefright.omx_default_rank=0
+media.stagefright.thumbnail.prefer_hw_codecs=true
+
+# Display
+debug.sf.disable_backpressure=1
+debug.sf.enable_transaction_tracing=false
+persist.vendor.oplus.display.adfr_config=singlev_normal
+ro.vendor.display.oplus.config=singlev_normal
+ro.vendor.display.scalability.enable=true
+ro.vendor.display.type=amoled
+
+# GPS
+persist.vendor.gps.hal.debug.en=0
+ro.vendor.gps.chip=mt6685
+
+# Graphics
+debug.renderengine.backend=skiaglthreaded
+debug.sf.treat_170m_as_sRGB=1
+ro.hardware.vulkan=mali
+ro.hardware.egl=mali
+
+# Media
+media.aac_51_output_enabled=true
+media.stagefright.audio.sink=48000
+
+# Memory
+persist.sys.purgeable_assets=1
+ro.vendor.build.mtk_opt=1
+
+# NFC
+ro.hardware.nfc_nci=mt6685
+
+# Perf
+persist.device_config.runtime_native_boot.iorap_perfetto_enable=false
+ro.mtk.perf.response_time=1
+
+# Phone
+ro.vendor.phone_in_call_vol_steps=11
+
+# Radio/modem
+persist.radio.add_power_save=1
+persist.radio.apm_sim_not_pwdn=1
+ro.baseband=mdm
+ro.vendor.mtk.md_prop_ver=1
+
+# Sensors
+persist.vendor.sensors.debug.ssc_qmi_debug=false
+
+# Telephony
+persist.vendor.radio.add_power_save=1
+
+# Wi-Fi
+persist.vendor.wifi.state=0
+wifi.interface=wlan0
+wifi.direct.interface=p2p0
