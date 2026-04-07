@@ -1,0 +1,3 @@
+Parsing device/oppo/OP5AA5L1/proprietary-files.txt
+Using source dump dir /Users/sanket/.gemini/antigravity/FindX8/ota_work/extracted/
+Processing device/oppo/OP5AA5L1/proprietary-files.txt
