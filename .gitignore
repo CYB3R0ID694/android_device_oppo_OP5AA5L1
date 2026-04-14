@@ -1,13 +1,12 @@
-# Prebuilt kernel artifacts (extracted locally, not committed)
-prebuilt/kernel
-prebuilt/dtb.img
-prebuilt/dtbo.img
+# Raw partition images (too large for GitHub — keep locally)
 prebuilt/boot.img
 prebuilt/vendor_boot.img
 prebuilt/tmp/
+
+# Individual .ko files (referenced via modules.load, not committed directly)
 prebuilt/modules/*.ko
 
-# OTA work directory
+# OTA work directory (local extraction workspace)
 ota_work/
 
 # macOS
