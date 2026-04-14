@@ -25,8 +25,12 @@ PRODUCT_COPY_FILES += \
 
 # Init scripts
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/rootdir/etc/init.mt6991.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.mt6991.rc \
-    $(DEVICE_PATH)/rootdir/etc/init.mt6991.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.mt6991.usb.rc \
+    $(DEVICE_PATH)/rootdir/etc/init.mt6991.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.mt6991.rc \
+    $(DEVICE_PATH)/rootdir/etc/init.mt6991.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.mt6991.usb.rc \
+    $(DEVICE_PATH)/rootdir/etc/init.project.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.project.rc \
+    $(DEVICE_PATH)/rootdir/etc/init.connectivity.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.connectivity.rc \
+    $(DEVICE_PATH)/rootdir/etc/init.modem.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.modem.rc \
+    $(DEVICE_PATH)/rootdir/etc/init.sensor_2_0.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.sensor_2_0.rc \
     $(DEVICE_PATH)/rootdir/etc/ueventd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/ueventd.rc \
     $(DEVICE_PATH)/rootdir/etc/init.recovery.mt6991.rc:recovery/root/init.recovery.mt6991.rc
 
@@ -184,9 +188,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0-service.mediatek
 
-PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/configs/thermal/.thermal_policy:$(TARGET_COPY_OUT_VENDOR)/etc/.thermal_policy_00
-
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.3-service-mtkdefault
@@ -206,8 +207,8 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     $(DEVICE_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
 
-# Shipping API level (device launched on Android 15)
-PRODUCT_SHIPPING_API_LEVEL := 35
+# Shipping API level (device launched on Android 16, first_api_level=36)
+PRODUCT_SHIPPING_API_LEVEL := 36
 
 # GKI / Kernel modules
 PRODUCT_PACKAGES += \
@@ -219,9 +220,14 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/prebuilt/modules/vendor_boot.modules.load:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/modules/modules.load
 endif
 
-# Power
-PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/configs/perf/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+# Dalvik heap (from stock vendor build.prop)
+PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.heapstartsize=16m \
+    dalvik.vm.heapgrowthlimit=256m \
+    dalvik.vm.heapsize=512m \
+    dalvik.vm.heaptargetutilization=0.5 \
+    dalvik.vm.heapminfree=8m \
+    dalvik.vm.heapmaxfree=32m
 
 # Telephony
 PRODUCT_PACKAGES += \
